@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FCA Enforcement Tracker | Cyber False Claims Act</title>
+<meta name="description" content="Free tracker of DOJ False Claims Act settlements for cybersecurity failures by federal contractors. Every case sourced.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">AI Tech Pros <span>MAPS Tools</span></div>
+    <h1>FCA Enforcement Tracker</h1>
+    <p class="sub">The False Claims Act turns a bad self-assessment into fraud. DOJ's Civil Cyber-Fraud Initiative has been settling cybersecurity cases since 2021. Every case below is individually sourced. The pattern is the point: none of these started with a breach. They started with a score that did not hold up.</p>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <div class="row">
+      <input id="search" placeholder="Search cases…" class="grow">
+      <select id="yearFilter"><option value="">All years</option></select>
+      <select id="sortBy">
+        <option value="date-desc">Newest first</option>
+        <option value="date-asc">Oldest first</option>
+        <option value="amt-desc">Largest settlement</option>
+        <option value="amt-asc">Smallest settlement</option>
+      </select>
+      <button id="exportCsv" class="btn ghost">Export CSV</button>
+    </div>
+    <div id="cases"></div>
+    <p class="muted small" id="dataNote"></p>
+  </section>
+
+  <section class="card">
+    <h2>Why this matters to you</h2>
+    <ul class="why">
+      <li><strong>Treble damages.</strong> The FCA allows triple the government's losses plus per-claim penalties. Settlements are the discount; trial is the multiplier.</li>
+      <li><strong>Whistleblowers.</strong> Most of these cases started with an employee filing a qui tam suit. Your own team knows your real score.</li>
+      <li><strong>Your SPRS score is evidence.</strong> DOJ does not need to prove you were hacked. It needs to show the score was false and you kept billing.</li>
+      <li><strong>Self-disclosure pays.</strong> Verizon cooperated and self-reported; its penalty multiplier dropped from 3x to 1.5x, saving over $1.3 million.</li>
+      <li><strong>Buyers inherit history.</strong> Nightwing paid $8.4 million for conduct that predated its acquisition. Check cybersecurity representations in due diligence.</li>
+    </ul>
+  </section>
+
+  <footer class="foot">
+    <p>Free tool from <strong>Neo Harvard</strong>, CEO of <a href="https://aitechpros.ai">AI Tech Pros</a>. Part of the <a href="https://github.com/nehemiah313/maps-framework">MAPS framework</a> family. Informational only, not legal advice. Settlement figures are as announced; they are not admissions of liability unless noted.</p>
+  </footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
