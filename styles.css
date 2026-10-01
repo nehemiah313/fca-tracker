@@ -235,3 +235,6 @@ body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple
 .grow { flex: 1; min-width: 180px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; font-size: 15px; }
 select { padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; font-size: 14px; font-family: inherit; background: #fff; }
 @media print { .row, footer { display: none; } .case { break-inside: avoid; } }
+
+.legal-line{margin-top:1rem;font-size:.85rem;color:#6b7280}
+.storage-note{font-size:.8rem;color:#9ca3af;margin-top:.4rem}
